@@ -23,6 +23,13 @@ return {
         -- Enable LSP capabilities (for autocompletion)
         local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
+        -- Configure clangd
+        require("lspconfig").clangd.setup({
+            capabilities = capabilities,
+            on_attach = function(client, _)
+                client.server_capabilities.documentFormattingProvider = true
+            end,
+        })
         -- Configure Lua LSP
         require("lspconfig").lua_ls.setup({
             capabilities = capabilities,

@@ -7,6 +7,9 @@ vim.keymap.set('n', 'k', 'kzz', { noremap = true })
 vim.keymap.set('n', 'j', 'jzz', { noremap = true })
 vim.keymap.set('n', '<C-u>', '<C-u>zz', { noremap = true })
 vim.keymap.set('n', '<C-d>', '<C-d>zz', { noremap = true })
-
+vim.keymap.set('v', 'k', 'kzz', { noremap = true })
+vim.keymap.set('v', 'j', 'jzz', { noremap = true })
+vim.keymap.set('v', '<C-u>', '<C-u>zz', { noremap = true })
+vim.keymap.set('v', '<C-d>', '<C-d>zz', { noremap = true })
 -- make esc run :noh 
 vim.keymap.set('n', '<Esc>', ':noh<CR>', { noremap = true, silent = true })
