@@ -42,8 +42,8 @@ return {
     vim.keymap.set("n", "<leader>pg", builtin.git_files, { desc = "[G]it files" })
     vim.keymap.set("n", "<leader>ps", builtin.live_grep, { desc = "[P]roject [S]earch" })
     vim.keymap.set("n", "<leader>pd", builtin.lsp_document_symbols, { desc = "[P]roject [D]efinitions" })
-
     vim.keymap.set("n", "<leader>pws", function()
+    vim.keymap.set("n", "<leader>pf", builtin.find_files, { desc = "[P]roject [F]iles" })
       local word = vim.fn.expand("<cword>")
       builtin.grep_string({ search = word })
     end, { desc = "[P]roject [W]ord [S]earch (current word)" })

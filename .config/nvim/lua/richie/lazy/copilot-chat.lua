@@ -7,7 +7,7 @@ return {
         },
         build = "make tiktoken",                            -- Only on MacOS or Linux
         opts = {
-            model = "GPT-4o",                               -- Set default model here
+            model = "gpt-4.1",                               -- Set default model here
             mappings = {
                 reset = {
                     normal = '<C-n>',
