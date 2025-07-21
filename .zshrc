@@ -147,12 +147,15 @@ function d () {
     dirs -v | head -n 10
   fi
 }
+
 compdef _dirs d
 
-# List directory contents
 alias l='ls -1'
 alias ll='ls -lth'
 alias la='ls -lAth'
+
+alias mkdf='cp -r ~/utils/files/.devcontainer . '
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/richiewilynnton/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
