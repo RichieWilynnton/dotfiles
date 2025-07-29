@@ -113,10 +113,10 @@ alias tmm="tmux new -s"
 
 
 # Changing/making/removing directory
-# setopt auto_cd
-# setopt auto_pushd
-# setopt pushd_ignore_dups
-# setopt pushdminus
+setopt auto_cd
+setopt auto_pushd
+setopt pushd_ignore_dups
+setopt pushdminus
 #
 alias -g ..='cd ..'
 alias -g ...='../..'
