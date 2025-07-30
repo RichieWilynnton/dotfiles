@@ -117,7 +117,8 @@ setopt auto_cd
 setopt auto_pushd
 setopt pushd_ignore_dups
 setopt pushdminus
-
+#
+alias -g ..='cd ..'
 alias -g ...='../..'
 alias -g ....='../../..'
 alias -g .....='../../../..'
@@ -153,7 +154,8 @@ alias l='ls -1'
 alias ll='ls -lth'
 alias la='ls -lAth'
 
-alias mkdf='cp -r ~/utils/files/.devcontainer . '
+# utils
+alias mkdf='cp ~/utils/files/Dockerfile . '
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
