@@ -11,4 +11,5 @@
     st = status
     co = checkout
     cm = commit
+    br = branch
     

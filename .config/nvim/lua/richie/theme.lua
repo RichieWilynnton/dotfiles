@@ -1,2 +1,3 @@
--- vim.o.background = "dark" -- or "light" for light mode
-vim.cmd([[colorscheme carbonfox]])
+vim.cmd([[colorscheme duskfox]])
+-- vim.o.background = "light"
+-- vim.cmd([[colorscheme gruvbox]])

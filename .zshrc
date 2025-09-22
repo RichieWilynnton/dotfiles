@@ -109,7 +109,7 @@ alias tm=tmux
 alias tma="tmux attach-session -t"
 alias tml="tmux ls"
 alias tmk="tmux kill-session -t"
-alias tmm="tmux new -s"
+alias tmn="tmux new -s"
 
 
 # Changing/making/removing directory

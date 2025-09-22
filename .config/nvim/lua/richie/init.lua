@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+vim.g.maplocalleader = " c"
 
 require("richie.lazy_init")
 -- All bindings in lazy directory override the ones defined in /lazy

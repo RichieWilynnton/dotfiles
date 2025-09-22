@@ -1,4 +1,3 @@
-vim.g.mapleader = " "
 
 -- vim.keymap.set('n', '<leader>gg', ':CopilotChatToggle<CR>', { noremap = true, silent = true })
 
@@ -11,6 +10,8 @@ vim.keymap.set('n', '<C-o>', '<C-o>zz', { noremap = true })
 vim.keymap.set('n', '<C-i>', '<C-i>zz', { noremap = true })
 vim.keymap.set('n', 'n', 'nzz', { noremap = true })
 vim.keymap.set('n', 'N', 'Nzz', { noremap = true })
+vim.keymap.set('n', 'gg', 'ggzz', { noremap = true })
+vim.keymap.set('n', 'G', 'Gzz', { noremap = true })
 
 vim.keymap.set('v', 'k', 'kzz', { noremap = true })
 vim.keymap.set('v', 'j', 'jzz', { noremap = true })

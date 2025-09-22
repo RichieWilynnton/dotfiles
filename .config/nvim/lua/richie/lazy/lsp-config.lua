@@ -10,7 +10,8 @@ return {
             "json-lsp",
             "jsonlint",
             "lua-language-server",
-            "ocamlformat"
+            "ocamlformat",
+            "python-lsp-server",
         },
     },
     dependencies = {
@@ -19,15 +20,12 @@ return {
     },
     config = function()
         vim.keymap.set('n', '<C-]>', vim.lsp.buf.definition, { desc = "Go to Definition (LSP)" })
-        vim.keymap.set("n", "<leader>lf", vim.lsp.buf.format, { buffer = bufnr, desc = "Format code" })
-        -- Enable LSP capabilities (for autocompletion)
         local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-        -- Configure clangd
         require("lspconfig").clangd.setup({
             capabilities = capabilities,
             on_attach = function(client, _)
-                client.server_capabilities.documentFormattingProvider = true
+                client.server_capabilities.documentFormattingProvider = false
             end,
         })
         -- Configure Lua LSP
@@ -49,6 +47,9 @@ return {
                     },
                 },
             },
+        })
+        require("lspconfig").pyright.setup({
+            capabilities = capabilities,
         })
     end,
 }
